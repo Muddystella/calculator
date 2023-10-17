@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Calculator</title>
+        <script src="stellz.js"></script>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+       <div class="box1">
+        <div>
+          <input type="text" id="input1">
+        </div>
+        <div>
+          <input type="text" id="input2" >
+        </div>
+        <hr>
+          <div class="grid-container">
+            <button class="text2" onclick="clearDisplay()">C</button>
+            <button class="text"onclick="appendDisplay('()')">()</button>
+            <button class="text"onclick="appendDisplay('%')">%</button>
+            <button class="text" onclick="appendDisplay('/')">/</button>
+            <button onclick="appendDisplay('7')">7</button>
+            <button onclick="appendDisplay('8')">8</button>
+            <button onclick="appendDisplay('9')">9</button>
+            <button class="text" onclick="appendDisplay('*')">x</button>
+            <button onclick="appendDisplay('4')">4</button>
+            <button onclick="appendDisplay('5')">5</button>
+            <button onclick="appendDisplay('6')">6</button>
+            <button class="text" onclick="appendDisplay('-')">-</button>
+            <button onclick="appendDisplay('1')">1</button>
+            <button onclick="appendDisplay('2')">2</button>
+            <button onclick="appendDisplay('3')">3</button>
+            <button class="text" onclick="appendDisplay('+')">+</button>
+            <button>+/-</button>
+            <button onclick="appendDisplay('0')">0</button>
+            <button onclick="appendDisplay('.')">.</button>
+            <button class="text3" onclick="calculate()">=</button>
+          </div>
+       </div> 
+    </body>
+</html>
